@@ -1,0 +1,25 @@
+
+/* -- global variables -- */
+
+body {
+
+}
+
+/* ---- */
+
+
+
+span.user_prompt {
+	font-size: 14px;
+	line-height: 20px;
+	color: rgba(255, 255, 255, 0.48);
+}
+
+p.answer_summary {
+	font-size: 28px;
+	line-height: 38px;
+	font-weight: 300;
+	max-width: 600px;
+	color: rgba(255, 255, 255, 0.9);
+}
+

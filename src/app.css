@@ -1,0 +1,122 @@
+
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+body {
+	font-family: 'Inter';
+	font-smooth: always;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	background-color: #000;
+	color: #f6f2fa;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.spacer_xs, .spacer_s, .spacer_m, .spacer_l {
+	clear: both;
+}
+
+.spacer_xs {
+	width: 100%;
+	height: 5px;
+}
+
+.spacer_s {
+	width: 100%;
+	height: 10px;
+}
+
+.spacer_m {
+	width: 100%;
+	height: 16px;
+}
+
+.spacer_l {
+	width: 100%;
+	height: 40px;
+}
+
+.lowlight {
+	opacity: 0.5;
+}
+
+.highlight {
+	color: rgba(255, 255, 255, 0.96);
+}
+
+/* ---- */
+
+.get_in, .get_out {
+	transition: opacity 0.4s;
+}
+
+.get_in {
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+
+.get_out {
+	opacity: 1;
+	transition: opacity 0.2s 0.2s;
+}
+
+
+
+
+
+/* -- */
+
+@media (min-width: 600px){
+	
+}
+
+
+
+
+@media (max-width: 1200px) and (min-width: 800px){
+	
+}
+
+
+@media (max-width: 900px) {
+	
+}
+
+@media (max-width: 800px) {
+	
+}
+
+@media (max-width: 600px) {
+	
+	
+	
+}
+
+@media (max-width: 500px) {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
