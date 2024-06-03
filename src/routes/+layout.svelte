@@ -1,6 +1,7 @@
 <script>
   import '../app.css'
   import '../typography.css'
+  import { onMount } from 'svelte';
   import Sources from '$lib/components/Sources.svelte';
   import { PUBLIC_OPENAI_API_KEY } from '$env/static/public';
   
@@ -8,6 +9,9 @@
   let imgkey = "AIzaSyCDI4ngygE6ziBa-R73TmMXCVpRL5tvSKU";
   let cx = "f6db0ab63501d4ca5";
   
+  onMount(() => {
+    document.querySelector('.main_input').focus();
+  });  
   
   function model_response(prompt, format, response_key){
     fetch('https://api.openai.com/v1/chat/completions', {
@@ -146,14 +150,12 @@
       continue_input_placeholder = '';
     }
     if (text == '\n') console.log('newline');
-    // if (e.target.clientHeight > 35) leaf_creation();
   }
   
   function handle_keydown(e){
     if (e.key == 'Enter') {
       console.log('sent');
       main_input_val == '' ? e.preventDefault() : prompted(main_input_val);
-      // continue_input_val == '' ? e.preventDefault() : prompted(continue_input_val);
     }
   }
   
@@ -426,9 +428,6 @@
     background-color: rgba(215, 207, 230, 0.16);
   }
   
-  .new_input {
-    
-  }
   
   .continue {
     display: inline-block;
@@ -508,14 +507,6 @@
   
   
   /* ----- */
-  
-  .content_wrap {
-    padding-top: 100px;
-    width: 100%;
-    height: 100%;
-    /* background-color: green; */
-    position: relative;
-  }
   
   
   span {
